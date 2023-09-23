@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>My Profile</title>
+	<style>
+		body {
+			font-family: Times New Roman, serif , sans-serif;
+			background-color: #643b9f ;
+			}
+			
+	
+		
+		@media only screen and (max-width: 4200px) {
+		}
+		/* design for large screens */
+        @media only screen and (max-width: 4200px) {
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #c3b1e1  ;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+			h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		p {
+			margin: 0 0 10px;
+			color: black;
+		}
+		.profile-pic {
+			max-width: 200px;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-details {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
+		.profile-details p {
+			flex: 1 1 100%;
+			margin: 0 10px 10px 0;
+			padding: 10px;
+			background-color:white;
+			color:black;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-details p:last-child {
+			margin-right: 0;
+		}
+		.profile-bio {
+			margin-bottom: 20px;
+			padding: 10px;
+			background-color:white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-bio p {
+			margin: 0;
+			color: black;
+			}
+			
+				.educational-background{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+			.educational-background p {
+			margin: 0;
+			color:black;
+			
+		}
+		.goals{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+				.goals p {
+			margin: 0;
+			color: black;
+		}	
+			.introduction{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+				.introduction p {
+			margin: 0;
+			color: black;
+		}	
+		 table, td {
+          border: 1px solid black;
+          /* cell spacing */
+          border-spacing: 5px;
+       }
+       td {
+          /* cell padding */
+          padding: 5px;
+       }
+		/* design for tablets */
+        @media only screen and (max-width: 768px) {
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: pink ;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+			h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		p {
+			margin: 0 0 10px;
+			color: black;
+		}
+		.profile-pic {
+			max-width: 200px;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-details {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
+		.profile-details p {
+			flex: 1 1 100%;
+			margin: 0 10px 10px 0;
+			padding: 10px;
+			background-color:white;
+			color:black;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-details p:last-child {
+			margin-right: 0;
+		}
+		.profile-bio {
+			margin-bottom: 20px;
+			padding: 10px;
+			background-color:white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-bio p {
+			margin: 0;
+			color: black;
+			}
+			
+				.educational-background{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+			.educational-background p {
+			margin: 0;
+			color:black;
+			
+		}
+		.goals{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+				.goals p {
+			margin: 0;
+			color: black;
+		}	
+			.introduction{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+				.introduction p {
+			margin: 0;
+			color: black;
+		}	
+		 table, td {
+          border: 1px solid black;
+          /* cell spacing */
+          border-spacing: 5px;
+       }
+       td {
+          /* cell padding */
+          padding: 5px;
+       }
+		/* design for mobile phones */
+        @media only screen and (max-width: 600px) {
+        .container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #c3b1e1 ;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+			h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+			}
+		p {
+			margin: 0 0 10px;
+			color: black;
+		}
+		.profile-pic {
+			max-width: 200px;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-details {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
+		.profile-details p {
+			flex: 1 1 100%;
+			margin: 0 10px 10px 0;
+			padding: 10px;
+			background-color:white;
+			color:black;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-details p:last-child {
+			margin-right: 0;
+		}
+		.profile-bio {
+			margin-bottom: 20px;
+			padding: 10px;
+			background-color:white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.profile-bio p {
+			margin: 0;
+			color: black;
+			}
+			
+				.educational-background{
+		 margin-bottom: 30px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+			.educational-background p {
+			margin: 0;
+			color:black;
+			
+		}
+		.goals{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+				.goals p {
+			margin: 0;
+			color: black;
+		}	
+		.introduction{
+		 margin-bottom: 20px;
+			padding: 10px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			
+			}
+				.introduction p {
+			margin: 0;
+			color: black;
+		}	
+		
+	
+			   table, td {
+          border: 1px solid black;
+          /* cell spacing */
+          border-spacing: 5px;
+       }
+       td {
+          /* cell padding */
+          padding: 5px;
+       }
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<center><h1>My Profile</h1><center</>
+		<img src="kahayi.jpg.png" alt="Profile Picture" class="profile-pic">
+		<center><h5>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h5><center</>
+		<div class="profile-details">    
+			<p>Name: Joecel H. Salgado</p>
+			<p>Age: 20</p>
+			<p>Address:Brgy. Oringao, Kabankalan City</p>
+ 	            <p>Contact No.: 09207190905</p>
+                         <p>Email:salgadojoecel7@gmail.com</p>
+                        </div>
+                        
+                      
+		<div class="introduction">
+			<h3>INTRODUCTION</h3></h3>
+			<p>Hello,Madlang people.Mabuhay!
+			My name is Joecel, and I am a student currently pursuing my degree in Information Technoloy.I am a hardworking and dedicated student who is always eager to learn and take on new challenges. </p>
+			
+		</div>
+			
+				
+				<div class="educational-background">
+			<h3>EDUCATIONAL BACKGROUND</h3>
+		<table>
+      <thead>
+         <tr> 
+            <th>Levels</th>
+            <th>School Names</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            
+            <td>Elementary:</td>
+            <td>Kabugwason Elementary School</td>
+         </tr>
+         <tr>
+            
+            <td>HighSchool:</td>
+            <td>Mansilingan Agro Industrial HighSchool</td>
+         </tr>
+         <tr>
+            
+            <td>Senior High:</td>
+            <td>Florentino Galang Senior National HighSchool</td>
+         </tr>
+         <tr>
+            
+            <td>College:</td>
+            <td>Central Philippine State University</td>
+         </tr>
+         
+      </tbody>
+       
+   </table>
+			
+		</div>
+		
+		<div class="profile-bio">
+			<h2>ABOUT ME</h2> 
+			<table>
+      <thead>
+         
+      </thead>
+      <tbody>
+         <tr>
+            
+            <td>Hobbies:</td>
+           <center> <td>I love to sing, dance, playing volleyball, drawing, watching movies, and listening to the music.</td></center>
+         </tr>
+         <tr>
+            
+            <td>Skills:</td>
+            <td>Hardworking and dedicade</td>
+         </tr>
+         <tr>
+            
+            <td>Motto:</td>
+            <td>“It’s not about perfect. It’s about effort.” – Jillian Michaels</td>
+         </tr>
+         
+         
+ 
+       
+   </table>
+			
+			</div>
+		
+		<div class="goals">
+			<h3>GOALS</h3></h3>
+			<p> My career goal as of this moment is to complete my degree course to the best standard I can and to get a job in the future. </p>
+			
+		</div>
+	</div>
+</body>
+</html>
+
